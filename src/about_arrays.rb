@@ -15,7 +15,7 @@ class AboutArrays < EdgeCase::Koan
     assert_equal [1], array     # __
 
     array[1] = 2
-    assert_equal [1, __(2)], array
+    assert_equal [1, foo(2)], array
 
     array << 333
     assert_equal __([1, 2, 333]), array
